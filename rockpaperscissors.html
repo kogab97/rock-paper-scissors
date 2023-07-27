@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock - paper - scissors</title>
+    <link rel="stylesheet" href="rockpaperscissors.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="info-container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="round-scores-container">
+          <div class="score-container">
+            <h2>Player</h2>
+            <p class="score" id="player-score">0</p>
+          </div>
+          <div class="score-container">
+            <h2>Computer</h2>
+            <p class="score" id="computer-score">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="game-container">
+        <div class="game-info-container" id="game-info-container">
+          <h2>Choose one</h2>
+          <p>Rounds left: <span id="rounds-left"></span></p>
+        </div>
+        <div id="game-result"></div>
+        <div class="buttons-container" id="buttons-container">
+          <button class="player-option-button" data-choice="rock">👊</button>
+          <button class="player-option-button" data-choice="paper">🤚</button>
+          <button class="player-option-button" data-choice="scissors">
+            ✌
+          </button>
+        </div>
+        <div id="round-result"></div>
+        <div id="round-choices"></div>
+        <button id="restart-button">Restart</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Computer</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="rockpaperscissors.js"></script>
+  </body>
+</html>
